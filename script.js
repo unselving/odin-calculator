@@ -8,6 +8,12 @@ const numberOrder = [7,8,9,4,5,6,1,2,3,0];
 const numbers = document.querySelectorAll('.number');
 numbers.forEach(function(currentBtn){
     currentBtn.value = numberOrder[i];
+    currentBtn.addEventListener('mouseover',()=>{
+        currentBtn.style.backgroundColor='darkgrey';
+    });
+    currentBtn.addEventListener('mouseout',()=>{
+        currentBtn.style.backgroundColor='rgb(235,235,235)';
+    });
     currentBtn.addEventListener('click',()=>{
         currentNumber=currentNumber+currentBtn.value;
         console.log(currentNumber);
@@ -17,6 +23,15 @@ numbers.forEach(function(currentBtn){
 
 const operators = document.querySelectorAll('.operator');
 operators.forEach(function(currentBtn){
+<<<<<<< HEAD
+=======
+    currentBtn.addEventListener('mouseover',()=>{
+        currentBtn.style.backgroundColor='darkgrey';
+    });
+    currentBtn.addEventListener('mouseout',()=>{
+        currentBtn.style.backgroundColor='rgb(235,235,235)';
+    });
+>>>>>>> calculator-ui
     currentBtn.addEventListener('click',()=>{
         numberArray.push(currentNumber);
         currentNumber="";
