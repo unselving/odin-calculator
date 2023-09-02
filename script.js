@@ -23,15 +23,12 @@ numbers.forEach(function(currentBtn){
 
 const operators = document.querySelectorAll('.operator');
 operators.forEach(function(currentBtn){
-<<<<<<< HEAD
-=======
     currentBtn.addEventListener('mouseover',()=>{
         currentBtn.style.backgroundColor='darkgrey';
     });
     currentBtn.addEventListener('mouseout',()=>{
         currentBtn.style.backgroundColor='rgb(235,235,235)';
     });
->>>>>>> calculator-ui
     currentBtn.addEventListener('click',()=>{
         numberArray.push(currentNumber);
         currentNumber="";
